@@ -4,8 +4,8 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'Apr 06, 2022',
-  name: 'Anastasya'
+  birthdate: 'Jul 23, 2022',
+  name: 'Japlaaa'
 };
 
 function hideEverything() {
@@ -26,7 +26,7 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
+let countDown = new Date(`${config.birthdate} 04:41:00`).getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = countDown - now;
@@ -419,7 +419,7 @@ x = setInterval(function() {
 
     ctx.translate(-hw, -hh);
 
-    if (done) for (let l = 0; l < letters.length; ++l) letters[l].reset();
+    if (done) window.location.href = "";
   }
 
   for (let i = 0; i < opts.strings.length; ++i) {
